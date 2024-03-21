@@ -21,5 +21,13 @@
             "command": "django-admin startproject server",
             "group": "build"
         }
+    ],
+    "inputs": [
+        {
+            "id": "param1",
+            "description": "Param1:",
+            "default": "app",
+            "type": "promptString"
+        }
     ]
 }
