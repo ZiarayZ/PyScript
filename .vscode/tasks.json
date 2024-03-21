@@ -26,7 +26,7 @@
         {
             "id": "param1",
             "description": "Param1:",
-            "default": "src",
+            "default": "server",
             "type": "promptString"
         },
         {
