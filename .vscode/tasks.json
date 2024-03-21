@@ -6,7 +6,7 @@
         {
             "label": "run: server",
             "type": "shell",
-            "command": "",
+            "command": "py ./server/manage.py runserver",
             "group": "build"
         },
         {
