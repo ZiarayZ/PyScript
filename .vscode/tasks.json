@@ -12,13 +12,13 @@
         {
             "label": "build: app",
             "type": "shell",
-            "command": "py ./server/manage.py startapp ${input:param1}",
+            "command": "py ./server/manage.py startapp ${input:param2}",
             "group": "build"
         },
         {
             "label": "build: django",
             "type": "shell",
-            "command": "django-admin startproject server",
+            "command": "django-admin startproject ${input:param1}",
             "group": "build"
         }
     ],
@@ -26,6 +26,12 @@
         {
             "id": "param1",
             "description": "Param1:",
+            "default": "src",
+            "type": "promptString"
+        },
+        {
+            "id": "param2",
+            "description": "Param2:",
             "default": "app",
             "type": "promptString"
         }
