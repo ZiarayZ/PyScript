@@ -6,13 +6,13 @@
         {
             "label": "run: server",
             "type": "shell",
-            "command": "py ./server/manage.py runserver",
+            "command": "py ./${input:param1}/manage.py runserver",
             "group": "build"
         },
         {
             "label": "build: app",
             "type": "shell",
-            "command": "py ./server/manage.py startapp ${input:param2}",
+            "command": "cd ./${input:param1} & py manage.py startapp ${input:param2}",
             "group": "build"
         },
         {
