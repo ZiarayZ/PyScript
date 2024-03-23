@@ -22,12 +22,6 @@
             "description": "Param1:",
             "default": "server",
             "type": "promptString"
-        },
-        {
-            "id": "param2",
-            "description": "Param2:",
-            "default": "app",
-            "type": "promptString"
         }
     ]
 }
