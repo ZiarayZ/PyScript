@@ -10,12 +10,6 @@
             "group": "build"
         },
         {
-            "label": "build: app",
-            "type": "shell",
-            "command": "cd ./${input:param1} & py manage.py startapp ${input:param2}",
-            "group": "build"
-        },
-        {
             "label": "build: django",
             "type": "shell",
             "command": "django-admin startproject ${input:param1}",
