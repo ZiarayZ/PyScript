@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def members(request):
+def login(request):
     return HttpResponse("Hello world!")
