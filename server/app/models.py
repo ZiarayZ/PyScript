@@ -8,5 +8,11 @@ class Member(models.Model):
 
 
 class Channels(models.Model):
-    channelid = models.AutoField(unique=True)
+    channelid = models.AutoField(unique=True, primary_key=True)
+
     # message bounds and another table for messages using a foreign key...? How do?
+
+
+class Messages(models.Model):
+    messageid = models.AutoField(unique=True, primary_key=True)
+    content = models.CharField(max_length=255)
