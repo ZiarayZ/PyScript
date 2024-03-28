@@ -12,3 +12,4 @@ class Messages(models.Model):
     content = models.CharField(max_length=255)
     createdon = models.DateTimeField()
     spoiler = models.BooleanField(default=False)
+    user = models.ForeignKey(Member)
